@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: radial-gradient(#1C191C, #000);
+    height: 100vh;
+    font-family: 'Roboto';
+    color: white;
+    margin: 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-container{
+    margin: 5vh 15vh;   
+}
+.logo{
+    flex: 3;
+    align-self: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex: 1;
+    color: white;
+    
+}
+nav li{
+    padding: 10px 20px;
+    align-self: center;
+}
+.content{
+    margin-top: 10vh ;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap
+   
+}
+
+.text-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-button button{
+    align-self: start;
+    margin-top: 30px;
+    background: #542084;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+}
+.cover-photo{
+    height: 60vh;
+    width: 30vw;
+}
+.cover-photo .photo{
+    position: relative;
+    height: 60vh;
+    left: 30%;
+}
+.rec1{
+    position: absolute;
+    left: 65%;
+    top: 15%;
+    height: 70vh;
+    width: 15vw;
+    z-index: -1;
+    background-color: rgba(84, 32, 132, 0.3);
+}
+.rec2{
+    position: absolute;
+    left: 80%;
+    bottom: 25%;
+    height: 20vh;
+    width: 20vh;
+    z-index: -1;
+    background-color: rgba(254, 186, 32, 0.3);
+}
+@media (max-width: 900px){
+    .content{
+        flex-direction: column;
+    }
+    .rec1{
+        left: 40%;
+        top: 20%;
+        min-width: 150px;
+    }
+    .rec2{
+        left: 40%;
+        bottom: 20%;
+        min-width: 200px;
+    }
+}
+section{
+    overflow: hidden;
+}
